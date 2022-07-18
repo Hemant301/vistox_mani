@@ -98,6 +98,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_dropdown",
+      "rootUri": "file:///Users/thecybertizehemant/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_dropdown-1.0.1+hotfix.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_geocoder",
       "rootUri": "file:///Users/thecybertizehemant/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_geocoder-0.2.2-nullsafety",
       "packageUri": "lib/",
@@ -464,7 +470,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-07-18T07:44:59.465934Z",
+  "generated": "2022-07-18T09:15:20.736316Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }
