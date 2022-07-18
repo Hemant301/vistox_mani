@@ -53,14 +53,8 @@ class MyApp extends StatelessWidget {
           '/bill': (context) => Bill(),
           '/shop': (context) => ShopPage(),
           '/categorysearch': (context) => CategorySearchPage(),
-
           '/shopmenu': (context) => ShopMenu(),
-
           // '/shop': (context) => ShopPage(),categorysearch
-
-          
-
-
         });
   }
 }

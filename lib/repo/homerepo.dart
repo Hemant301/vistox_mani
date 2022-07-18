@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:vistox/Modal/homemodal.dart';
+import 'package:vistox/Modal/productdiscriptionTap.dart';
 import 'package:vistox/api/homeapi.dart';
 
 class HomeRepo {
@@ -8,6 +9,12 @@ class HomeRepo {
     final response = await homeApi.fetchHomeSlider(id);
     var jsonResponse = jsonDecode(response.body) as List<dynamic>;
     return SliderModal(jsonResponse);
+  }
+
+  Future<SearchModal> fetchSearch(id) async {
+    final response = await homeApi.fetchSearch(id);
+    var jsonResponse = jsonDecode(response.body) as Map;
+    return SearchModal(jsonResponse);
   }
 
   Future<HomeTabdetailinnnerModal> fetchHometabItems(id) async {

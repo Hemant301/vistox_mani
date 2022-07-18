@@ -1,5 +1,6 @@
 import 'package:rxdart/rxdart.dart';
 import 'package:vistox/Modal/homemodal.dart';
+import 'package:vistox/Modal/productdiscriptionTap.dart';
 import 'package:vistox/repo/homerepo.dart';
 
 class HomeBloc {
@@ -16,6 +17,22 @@ class HomeBloc {
       // print(homeSlider.imgs!.length);
 
       _liveSlider.add(homeSlider);
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  final BehaviorSubject<SearchModal> _liveSearch =
+      BehaviorSubject<SearchModal>();
+
+  BehaviorSubject<SearchModal> get getSearch => _liveSearch;
+
+  fetchSearch(id) async {
+    try {
+      SearchModal homeSlider = await _homeRepo.fetchSearch(id);
+      // print(homeSlider.imgs!.length);
+
+      _liveSearch.add(homeSlider);
     } catch (e) {
       print(e);
     }
